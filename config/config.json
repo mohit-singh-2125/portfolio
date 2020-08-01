@@ -1,0 +1,54 @@
+{
+  "LOCAL": {
+    "USERNAME": "root",
+    "PASSWORD": "Rayon",
+    "DATABASE": "ticket",
+    "HOST": "localhost",
+    "dialect": "mysql",
+    "TIMEZONE": "+05:30",
+    "POOL": {
+      "MAX": 5,
+      "MIN": 1,
+      "IDLE": 30000
+    }
+  },
+  "DEVELOPMENT": {
+    "USERNAME": "root",
+    "PASSWORD": "root@123",
+    "DATABASE": "portfolio",
+    "HOST": "localhost",
+    "dialect": "mysql",
+    "TIMEZONE": "+05:30",
+    "POOL": {
+      "MAX": 5,
+      "MIN": 1,
+      "IDLE": 30000
+    }
+  },
+  "STAGING": {
+    "USERNAME": "",
+    "PASSWORD": "",
+    "DATABASE": "",
+    "HOST": "",
+    "DIALECT": "",
+    "TIMEZONE": "",
+    "POOL": {
+      "MAX": 5,
+      "MIN": 1,
+      "IDLE": 30000
+    }
+  },
+  "PRODUCTION" : {
+    "USERNAME": "root",
+    "PASSWORD": "[root]",
+    "DATABASE": "portfolio",
+    "HOST": "13.232.253.90",
+    "dialect": "mysql",
+    "TIMEZONE": "+05:30",
+    "POOL": {
+      "MAX": 5,
+      "MIN": 1,
+      "IDLE": 30000
+    }
+  }
+}
