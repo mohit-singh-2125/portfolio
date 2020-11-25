@@ -44,7 +44,7 @@ function createMessage(req, res) {
                     });
                 })
                 .catch((ex) => {
-                    console.log("contoller",ex)
+                    console.log("contollerError",ex)
                     res.status(500);
                     res.json({
                         status: false,

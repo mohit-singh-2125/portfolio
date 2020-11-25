@@ -8,7 +8,7 @@ class Contacts {
 
     create(reqParams) {
         return new Promise((resolve, reject) => {
-            console.log(reqParams)
+            console.log("coreeee")
             ContactSchemaModel.create({
                 name:reqParams.name,
                 email: reqParams.email,

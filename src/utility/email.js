@@ -18,7 +18,7 @@ function sendEmail(emailTo, templateId, templateBody, attach) {
         let subjectBody = '';
         if (templateId == "msg") {
             htmlBody = msgTemplate(templateBody);
-            subjectBody = "New Message";
+            subjectBody = "New Message ";
         }
         
 
