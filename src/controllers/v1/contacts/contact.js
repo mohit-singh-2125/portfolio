@@ -31,10 +31,9 @@ function listMessages(req, res) {
 function createMessage(req, res) {
     let reqParams = req.body;
     console.log("controler")
-    console.log(req.body)
             createMessageService(reqParams)
                 .then((data) => {
-                    console.log(data)
+               
                     res.status(200);
                     res.json({
 
