@@ -3,6 +3,9 @@ const { msgTemplate, } = require('./template');
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
+    host: 'smtp.gmail.com',
+    ignoreTLS: false,
+secure: false,
     auth: {
         user: 'toolticket52@gmail.com',
         pass: 'tickett00L'
