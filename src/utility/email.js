@@ -2,12 +2,12 @@ var nodemailer = require("nodemailer");
 // var smtpTransport = require('nodemailer-smtp-transport');
 const { msgTemplate, } = require('./template');
 
-const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
-    port: 587,
+var transporter = nodemailer.createTransport({
+  service:'gmail',
+  secure:'false',
     auth: {
-        user: 'rosalia75@ethereal.email',
-        pass: 'kcx59UPERYh9HHNTkp'
+        user: 'testingacc744@gmail.com',
+        pass: 'qwerty2125'
     }
 });
 
@@ -26,7 +26,7 @@ function sendEmail(emailTo, templateId, templateBody, attach) {
 
         var mailOptions = {
             
-            from: 'rosalia75@ethereal.email',
+            from: 'testingacc744@gmail.com',
             to: emailTo,
             subject: subjectBody,
             html: htmlBody
