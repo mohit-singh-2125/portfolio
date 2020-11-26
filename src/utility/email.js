@@ -1,16 +1,18 @@
 var nodemailer = require("nodemailer");
+var smtpTransport = require('nodemailer-smtp-transport');
 const { msgTemplate, } = require('./template');
 
-var transporter = nodemailer.createTransport({
+var transporter = nodemailer.createTransport(smtpTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
+    port: 587,
     ignoreTLS: false,
 secure: false,
     auth: {
         user: 'toolticket52@gmail.com',
         pass: 'tickett00L'
     }
-});
+}));
 
 module.exports = { sendEmail };
 
@@ -21,7 +23,7 @@ function sendEmail(emailTo, templateId, templateBody, attach) {
         let subjectBody = '';
         if (templateId == "msg") {
             htmlBody = msgTemplate(templateBody);
-            subjectBody = "New Message ";
+            subjectBody = "New Message";
         }
         
 
