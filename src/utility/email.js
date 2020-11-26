@@ -1,14 +1,15 @@
 var nodemailer = require("nodemailer");
-var smtpTransport = require('nodemailer-smtp-transport');
+// var smtpTransport = require('nodemailer-smtp-transport');
 const { msgTemplate, } = require('./template');
 
-var transporter = nodemailer.createTransport(smtpTransport({
+var transporter = nodemailer.createTransport({
   service:'gmail',
+  secure:'false',
     auth: {
         user: 'toolticket52@gmail.com',
         pass: 'tickett00L'
     }
-}));
+});
 
 module.exports = { sendEmail };
 
