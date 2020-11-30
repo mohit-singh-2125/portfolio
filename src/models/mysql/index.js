@@ -3,7 +3,7 @@ const PATH = require('path');
 const SEQUELIZE = require('sequelize');
 
 const BASENAME = PATH.basename(module.filename);
-  const ENV = "PRODUCTION"
+ const ENV = "PRODUCTION"
 // const ENV = process.env.NODE_ENV || 'local';
 const CONFIG = require('../../../config/config.json')[ENV];
 
