@@ -21,7 +21,7 @@
     "fast-csv": "^4.3.0",
     "fs": "0.0.1-security",
     "generate-password": "^1.5.1",
-    "html-pdf": "^2.2.0",
+    "html-pdf": "^3.0.1",
     "js-excel-template": "^2.0.4",
     "json2xls": "^0.1.2",
     "jsonexport": "^2.4.1",
